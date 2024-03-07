@@ -1,10 +1,53 @@
 @import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+
+/*Reset*/
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-.red{
-    color: red;
-    font-family: "Rock Salt", cursive;
+
+/*Heder*/
+
+.main-header{
+    background-image: url(background-image.png);/*adicionar a imagem no fundo do topo*/
+    background-position: 50% 39%;/*alinha os elementos nos eixos x e y*/
+    display: flex;/*colocar os elementos centralizados*/
+    flex-direction: column;/*alinha os elementos um embaixo do outro*/
+    align-items: center;/*centralizar os elementos*/
 }
+
+.main-nav{
+    width: 100%;/*ocupar toda a area disponivel*/
+    max-width: 600px;/*trava a largura maxima que definir para o projeto*/
+    padding: 0 16px;/*primeiro é cima e baixo, segundo esquerda e direita*/
+}
+
+.header-list-container{
+    display: flex;/*colocar os elementos na mesma linha*/
+    justify-content: space-between;/*adiciona um espaçamento entre os itens*/
+    align-items: center;/*garantir que fiquem alinhados na mesma linha*/
+    padding: 16px 0;/*primeiro é esquerda e direita, segundo cima e baixo*/
+}
+
+.nav-item{
+    list-style-type: none;/*remove as bolinhas padrão dos elementos li*/
+    text-transform: uppercase;/*deixar todas as letras em maiusculo*/
+    color: #00008b;
+}
+
+hr{
+    width: 100%;/*ocupar toda area disponivel*/
+}
+
+.nav-item a{
+    text-decoration: none;/*remove o underline do ancora*/
+    color: inherit;/*herda a or do elemento pai (neste caso é o nav-item)*/
+}
+
+.nav-item:hover{
+    color: rgba(0, 0, 139, 0.7);/*quando passar o mouse troca a cor / rgba passa a cor e no final*/
+    transition: 0.2s;
+}
+
