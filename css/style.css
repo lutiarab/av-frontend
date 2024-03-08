@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rock+Salt&display=swap');
 
 /*Reset*/
 
@@ -20,8 +21,9 @@
 
 .main-nav{
     width: 100%;/*ocupar toda a area disponivel*/
-    max-width: 600px;/*trava a largura maxima que definir para o projeto*/
-    padding: 0 16px;/*primeiro é cima e baixo, segundo esquerda e direita*/
+    /*   padding: 0 16px;primeiro cima/baixo, segundo esquerda/direita
+    margin: 0 auto;/* nao aplica cima/baixo, o auto distribui o maimo possivel a direita e para a esquerda
+    como repete no container ele é apagado e colocamos no html a class container junto*/
 }
 
 .header-list-container{
@@ -51,3 +53,28 @@ hr{
     transition: 0.2s;
 }
 
+.main-about{
+    padding: 40px 0 64px;
+}
+
+.container{
+    max-width: 600px;/*travar a largura maxima que definimos para o projeto*/
+    padding: 0 16px;/*primeiro cima/baixo, segundo esquerda/direita*/
+    margin: 0 auto;/* nao aplica cima/baixo, o auto distribui o maimo possivel a direita e para a esquerda*/
+}
+
+.about-title{
+    font-family: "raleway", sans-serif;/*pega a onte importada, caso ele nao encontre utiliza a sans-serif*/
+    font-size: 32px;/*tamanho da fonte*/
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+}
+
+.about-image{
+    float: left;/*alinha a imagem esquerda e o texto a direita*/
+    margin: 0 20px 10px 0;/*o topo, 20 direita, 10 baixo, 0 esquerda*/
+    /*diminuir o tamanho das imagens*/
+    width: 200px;/*largura*/
+    height: auto;/*evita a distorção de imagen*/
+}
