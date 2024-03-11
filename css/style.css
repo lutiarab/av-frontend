@@ -9,7 +9,21 @@
     box-sizing: border-box;
 }
 
+li{
+    list-style-type: none;/*retira as bolinhas do elemento li*/
+}
+
 /*Heder*/
+
+:root{
+    --blue: #00008b;
+    --gray: #555555;
+    --skyblue: #00BFFF;
+    --silver: #c0c0c0;
+    --red: #ff0000;
+    --white: #ffffff;
+    --dargray: #959595;
+}
 
 .main-header{
     background-image: url(background-image.png);/*adicionar a imagem no fundo do topo*/
@@ -34,9 +48,8 @@
 }
 
 .nav-item{
-    list-style-type: none;/*remove as bolinhas padrão dos elementos li*/
     text-transform: uppercase;/*deixar todas as letras em maiusculo*/
-    color: #00008b;
+    color:var(--blue);
 }
 
 hr{
@@ -77,4 +90,45 @@ hr{
     /*diminuir o tamanho das imagens*/
     width: 200px;/*largura*/
     height: auto;/*evita a distorção de imagen*/
+}
+
+.about-description{
+    color: var(--gray);/*utiliza variavel de cor ciado no root*/
+    text-align: justify;/*justifica o texto*/
+}
+
+/*footer*/
+
+.main-footer{
+    background-color: var(--skyblue);/*aplica cor no fundo do rodape*/
+    padding: 15px 0;/*aplica espaçamento em cima/baixo e na esquerda/direita*/
+}
+
+.main-footer-container{
+    display: flex;/*deixar tudo na mesma linha*/
+    align-items: center;/*alinha todos os elementos*/
+    justify-content: space-between;/*colar nome de um lado e lista de icones do outro*/  
+}
+
+.title-smaller{
+    font-family: "Raleway", sans-serif;/*pegar a fote importada*/
+    color: var(--blue);/*aplicar cor com a variavel criada no root do css*/
+    font-size: 26px;/*aumenta o tamanho da fonte*/
+}
+
+.list-container{
+    display: flex;/*deixar o elementos na mesma linha*/
+    align-items: center;/*alinhar todos os elementos*/
+    justify-content: space-between;/*colocar o nome de um lado e os icones do outro*/
+}
+
+.footer-item{
+    width: 50px;
+    height: 50px;
+    padding: 15px 0;/*aplica espaçamento 15px em cima/baixo, e 0px direita/esquerda*/
+}
+
+.footer-item + .footer-item{
+    margin-left: 16px;/*aplica na mesma class seguindo em diante, ate chegar seguindo em diante, ate chegar em um elemento*/
+    
 }
