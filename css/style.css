@@ -16,7 +16,7 @@
     --darkgray: #959595;
 }
 
-body {
+body, button, input {
     font: 400 22px "Roboto", sans-serif; /*Dar fonte a todo body, com peso regular 400 e tamanho 22, caso nao ache  a fonte importada ultiliza a fonte secundaria*/
 }
 
@@ -225,4 +225,50 @@ textarea.contact-field {
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 40px;
+    padding-bottom: 30px;
+}
+
+.product{
+    display: flex;/*colocar todos na mesma linha*/
+    flex-direction: column;/*alinha em coluna, um embaixo do outro*/
+    align-items: center;/*alinha os intens ao centro*/
+}
+
+.product-title{
+    font-size: 20px;
+    margin-bottom: 6px;
+}
+
+.product-image{
+    width: 320px;/*trava olocar 2 produtos por linha, pq o epaço do projeto é do 320px*/
+    height: 220px;/*trava a altur da imagem*/
+    margin-bottom: 20px;/*aplica  espaço abaixo da imagem*/
+}
+
+.product-price-container{
+    width: 100%;/*ocupar 100% do espaço disponivel*/
+    display: flex;/*alinha os eleentos na mesma linha*/
+   justify-content: space-between;
+   align-items: center;
+}
+
+.product-price{
+    font-family: "Raleway", sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.button-hover{
+    background-color: var(--skyblue);
+    color: var(--blue);
+    border: 2px solid var(--skyblue);
+    border-radius: 4px 2px;
+    border-radius: 10px;
+    padding: 4px 2px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.button-hover:hover{
+    background-color: transparent;
 }
