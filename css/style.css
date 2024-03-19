@@ -265,7 +265,7 @@ textarea.contact-field {
    width: 100%; /*Ocupar 100% do espaço disponivel*/
    display: flex; /*alinha os elementos na mesma linha*/
    justify-content: space-between;
-   align-items: center;
+   align-items: center;/*alinha os intes ao centro*/
 }
 
 .product-price {
@@ -298,4 +298,78 @@ textarea.contact-field {
    text-align: start;
    border-bottom: 1px solid var(--darkgray);/*adicionar a linha da borda embaixo*/
    text-transform: uppercase;/*transforma o texto em maiusculo*/
+}
+
+.second-col,
+.third-col{
+   width: 25%;/*fazer a segunda e a terceira coluna ocupem o mesmo espaço */
+}
+
+.cart-product{
+   padding: 8px;/*criar um espaçamento pequeno entre os elementos*/
+}
+
+.product-identification{
+   display: flex;/*colocar os elementos na mesma linha*/
+   align-items: center;/*centralizar os objetos*/
+}
+
+.cart-product-image{
+   width: 120px;
+   height: 80px;
+}
+
+.cart-product-title{
+   margin-left: 15px;/*criar um espaçamento entre a imagem e o nome do produto*/
+}
+
+.cart-product-price{
+   font-family: "Raleway", sans-serif;
+}
+
+.product-qnt-input{
+   width: 41px;
+   height: 35px;
+   border: 2px solid var(--blue);
+   border-radius: 5px;
+   background-color: var(--silver);
+   text-align: center;
+}
+
+.remove-product-button{
+   background-color: var(--red);
+   color: var(--white);
+   border: 0;
+   border-radius: 5px;
+   padding: 4px 2px;
+   margin-left: 5px;
+}
+
+.remove-product-button:hover{
+   filter: brightness(0.8);/*diminui um o brilho do botão com essa propiedade*/
+}
+
+.cart-total-container{
+   border-top: 1px solid var(--darkgray);
+   text-align: end;/*leva para o final do campo*/
+   padding: 6px 16px 0 0;/*top direita baixo esquerada*/
+}
+
+.cart-total-container strong{
+   margin-right: 10px;
+}
+
+.purchase-button{
+   display: flex;/*quabrar para centralizar*/
+   padding: 16px 20px;/*cima/baixo Direita/esquerda*/
+   background-color: var(--blue);
+   color: var(--white);
+   border-radius: 6px;
+   text-transform: uppercase;/*transforma o texto em maiusculo*/
+   border: 0;
+   font-weight: bold;
+   margin: 24px auto 0;/*cima esquerda/direita baixo*/
+}
+.purchase-button:hover{
+   filter: brightness(0.8);
 }
