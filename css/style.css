@@ -117,7 +117,7 @@ li {
    padding: 15px 0; /*Aplica espaçamento 15px cima/baixo e 0px equerda/direita*/
 }
 
-.footer-container {
+.main-footer-container {
    display: flex; /*Deixar tudo na mesma linha*/
    align-items: center; /* Alinha todos os elementos*/
    justify-content: space-between; /*Colar nome de um lado e lista de icones do outro*/
@@ -127,6 +127,12 @@ li {
    font-family: "Raleway", sans-serif; /*Pegar a fonte importada*/
    color: var(--blue); /*Aplica cor com a variavel criada no root do CSS*/
    font-size: 26px; /*Aumenta o tamanho da fonte*/
+}
+
+.list-container {
+   display: flex; /*Deixar tudo na mesma linha*/
+   align-items: center; /* Alinha todos os elementos*/
+   justify-content: space-between; /*Colar nome de um lado e lista de icones do outro*/
 }
 
 .footer-item {
@@ -372,4 +378,22 @@ textarea.contact-field {
 }
 .purchase-button:hover{
    filter: brightness(0.8);
+}
+
+/*Responsividade*/
+
+/*tablete*/
+
+@media (max-width: 720px){
+   .footer-container{
+   flex-direction: column;
+   }
+}
+
+/*mobailer*/
+
+@media (max-width: 420px){
+   .main-header{
+      font-size: 18px;
+   }
 }
