@@ -483,14 +483,13 @@ textarea.contact-field {
    }
 }
 
-/*590*/
 @media(max-width: 590px){
-   .product-identification{
-      flex-direction: column;
-   }
-   .product-qnt-input{
-      
-   }
+    .product-identification{
+        flex-direction: column;
+    }
+    .product-qnt-input{
+        display: block;
+    }
 }
 
 /*560*/
