@@ -483,12 +483,14 @@ textarea.contact-field {
    }
 }
 
+/*590*/
 @media(max-width: 590px){
     .product-identification{
         flex-direction: column;
     }
     .product-qnt-input{
         display: block;
+        margin-left: 35px;
     }
 }
 
@@ -519,6 +521,12 @@ textarea.contact-field {
    }
 }
 
+/*425*/
+@media(max-width: 425px){
+    .cart-table{
+        width: 101%;
+    }
+}
 /*405*/
 @media(max-width: 405px){
    .nav-item img{
@@ -558,11 +566,6 @@ textarea.contact-field {
    }
 }
 
-@mediamar(max-width: 580px){
-    .product-qnt-input{
-        margin-left:22px;
-    }
-}
 
 
 
