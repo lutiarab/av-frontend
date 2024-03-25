@@ -558,6 +558,12 @@ textarea.contact-field {
    }
 }
 
+@mediamar(max-width: 580px){
+    .product-qnt-input{
+        margin-left:22px;
+    }
+}
+
 
 
 
